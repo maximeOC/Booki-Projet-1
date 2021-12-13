@@ -58,9 +58,14 @@ textarea {
 
 html
 {
-    
     -webkit-text-size-adjust: 100%;
 }
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; 
+    font: inherit; 
+}
+
 
 header{
     display: flex;
@@ -104,13 +109,12 @@ a
     background-color: transparent;
 }
 
+
 header img
 {
    width: 150px;
    height: 75px;
    margin-left: 0px;
-  
-   
 }
 h1 strong
 {
@@ -745,9 +749,7 @@ img.radiustopleftright
 @media screen and (max-width: 768px)
 {
 
-    body{
-        display: block;
-    }
+   
 #hebergements .hotel .populaire
 {
     width: 100%;
@@ -792,7 +794,6 @@ img.bottomlefttopleft {
 
 #activites
 {
-    background-color: #0065FC;
     margin: 15px;
 
 }
