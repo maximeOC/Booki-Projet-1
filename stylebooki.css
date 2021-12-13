@@ -12,8 +12,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	
-	
 	border: 0;
 	font-size: 15px;
     vertical-align: baseline;
@@ -41,6 +39,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
 *
 {
     
@@ -49,7 +58,7 @@ table {
 
 html
 {
-    line-height: 1.15;
+    
     -webkit-text-size-adjust: 100%;
 }
 
@@ -134,6 +143,8 @@ p.endroit
 .searchInput
 {
     border: none;
+    -webkit-appearance: textfield; 
+    outline-offset: -2px;
 }
 button.recherche
 {
@@ -141,7 +152,8 @@ button.recherche
     color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: none
+    border: none;
+    overflow: visible;
 }
 .search
 {
@@ -153,7 +165,7 @@ button.recherche
     border-radius: 10px;
     background-color: #f2f2f2;
     width:fit-content;
-    height: fit-content;
+    
     height: 40PX;
     
 }
@@ -658,16 +670,22 @@ ul.liste-footer
 
 #hebergements
 {
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin: 0;
     width: fit-content;
 }
 .hotel
 {
-    padding-left: 50px;
-    padding-right: 70px;
+    padding: 0%;
+    background-color: none;
     width: fit-content;
     flex-wrap: wrap;
+}
+
+.directionrow
+{
+    
+    flex-wrap: wrap;
+    
 }
 
 .populaire
@@ -685,14 +703,13 @@ ul.liste-footer
 img.bottomlefttopleft
 {
     
-    width: 350px;
+    width: fit-content;
     object-fit: cover;
 }
 .logement
 {
     margin: 15px;
     margin-top: 35px;
-    background-color: cadetblue;
     margin-top: 50px;
     width: 230px;
 }
@@ -707,9 +724,9 @@ img.bottomlefttopleft
 {
     flex-wrap: wrap;
     width: fit-content;
-    background-color: cadetblue;
-    padding-left: 150px;
+    
 }
+
 
 img.radiustopleftright
 {
@@ -719,10 +736,7 @@ img.radiustopleftright
 {
     font-size: 17px;
 }
-.hotel
-{
-    width: fit-content;
-}
+
 
 }
 
@@ -730,6 +744,14 @@ img.radiustopleftright
 
 @media screen and (max-width: 768px)
 {
+
+    body{
+        display: block;
+    }
+#hebergements .hotel .populaire
+{
+    width: 100%;
+}
 header {
         
         flex-direction: column;
@@ -742,34 +764,61 @@ nav a:hover
 
 .filters 
     {
-        display: flex;
+        
         flex-direction: column;
         
     }
-
+img.bottomlefttopleft {
+    width: 250px;
+}
 .filters ul
 {
-    display: flex;
+   
     flex-direction: column;
 }
 
 .directionrow
 {
-    display: flex;
+    
     flex-wrap: wrap;
+    
+}
+.directioncolumn
+{
+    
+    flex-wrap: wrap;
+    
+}
+
+#activites
+{
+    background-color: #0065FC;
+    margin: 15px;
+
+}
+
+.columnactdouble img, .columnact img
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    width: 275px;
+    object-fit: cover;
+    
 }
 .logement
 {
-    width: 200px;
+    width: 190px;
 }
 img.radiustopleftright
 {
-    width: 190px;
+    width: 180px;
 }
 .hotel
 {
     width: fit-content;
     padding: 0%;
+
 }
 p.price, p.hotelname , .etoile
 {
@@ -779,7 +828,14 @@ img.bottomlefttopleft
 {
     object-fit: cover;
 }
+.footercontenu
+{
+    flex-direction: column;
+}
+.hotel
+{
+    flex-direction: column;
 }
 
-    
+}    
 
