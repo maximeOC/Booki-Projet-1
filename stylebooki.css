@@ -44,10 +44,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit; 
+  font-size: 100%; 
+  line-height: 1.15; 
+  margin: 0; 
 }
 
 *
@@ -76,14 +76,15 @@ header{
     align-items: center;
     
 }
-nav
+nav ol
 {
     display: flex;
     flex-direction: row;
     margin-right: 20px;
     
 }
-nav a:hover, .highlight{
+nav a.surlignement:hover
+{
 	color: #0065FC;
 	border-top: 2px solid #0065FC;
 	padding-top: 33px;
@@ -169,7 +170,6 @@ button.recherche
     border-radius: 10px;
     background-color: #f2f2f2;
     width:fit-content;
-    
     height: 40PX;
     
 }
@@ -273,7 +273,7 @@ i.icon-filter
 
 img.radiustopleftright
 {
-    width: 250px;
+    width: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 150px;
@@ -303,21 +303,25 @@ img.radiustopleftright
 {
     display: flex;
     flex-direction: row;
-    
+    width: 100%;
+        
 }
 .directioncolumn
 {
     display:flex;
     flex-direction: column;
     justify-content:space-around;
+    width:150%;
+    
+    
 }
 
 .hotel
 {
     flex-wrap: wrap;
     display: flex;
+    flex: auto;
     justify-content: flex-start;
-    width: fit-content;
     margin-top: 30PX;
     margin-left: 20px;
     background-color: #f2f2f2;
@@ -326,6 +330,7 @@ img.radiustopleftright
     padding-right: 50px;
     margin-right:0px;
     height: 40%;
+    width: 60%;
     
     
 }
@@ -336,12 +341,13 @@ img.radiustopleftright
   justify-items: start;
   box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   border-radius: 20px;
-  height: 230px;
+  height: 240px;
   margin-top: 60px;
   margin-left: 10px;
   margin-right: 0px;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  
+  
 }
 .price
 {
@@ -410,7 +416,7 @@ margin-bottom: 5px;
     padding-right: 20px;
     padding-top: 20px;
     
-    width: 270px;
+    width: 20%;
     
 }
 .hotelpop
@@ -448,7 +454,7 @@ i.chartline
 img.bottomlefttopleft
 {
     object-fit: cover;
-    width: 150px;
+    width: 50%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     margin-top: 5px;
@@ -475,7 +481,7 @@ img.bottomlefttopleft
 }
 .hotelnamepop
 {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 800;
     margin-left: 0%;
     
@@ -494,7 +500,7 @@ p.pricepop
     margin-left: 50px ;
     margin-top: 30px;
     font-weight: bolder;
-    font-size:20px
+    font-size:20px;
 }
 
 .activite-list
@@ -504,9 +510,17 @@ p.pricepop
     align-items: center;
     padding-top: 5px;
     padding-left: 0px;
-    width: fit-content;
+    width: 100%;
     margin-left: 0px;
+
  
+}
+.deuxcolumn
+{
+    
+    display: flex;
+    width: 100%;
+    
 }
 .columnact 
 {
@@ -517,7 +531,7 @@ p.pricepop
   margin: 40px;
   margin-left: 30px;
   text-align: center;
-  width: fit-content;
+  width: 100%;
   
 }
 .activite-list :hover
@@ -536,7 +550,7 @@ p.pricepop
     border-radius: 20px;
     margin: 20px;
     text-align: center;
-    width: fit-content;
+    width: 90%;
 
 }
 .longchamp
@@ -547,7 +561,7 @@ p.pricepop
     border-radius: 20px;
     margin: 20px;
     text-align: center;
-    width: fit-content;
+    width: 90%;
 
 }
 .fort
@@ -558,7 +572,7 @@ p.pricepop
     border-radius: 20px;
     margin: 20px;
     text-align: center;
-    width: fit-content;
+    width: 90%;
 
 
 }
@@ -570,12 +584,12 @@ p.pricepop
     border-radius: 20px;
     margin: 20px;
     text-align: center;
-    width: fit-content;
+    width: 90%;
 
 }
 .columnact img
 {
-    width: 280px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 385px;
@@ -586,13 +600,27 @@ p.pricepop
 {
     height: 100px;
     object-fit: cover;
-    width: 275px;
+    width: 100%;
 }
 .columnactdouble .fort .taillefort
 {
-    width: 275px;
+    width: auto;
     height: 200px;
+    object-fit: cover;
 }
+
+.columnactdouble .damedelagarde img
+{
+    
+    object-fit: cover;
+    width: 100%;
+}
+.columnactdouble .longchamp img
+{
+    width: auto;
+    height: 155px;
+}
+
 
 h3.damestyle
 {
@@ -603,7 +631,7 @@ h3.damestyle
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 150px;
-    width: 275px;
+    width: 100%;
     object-fit: cover;
     
 }
@@ -611,9 +639,11 @@ h3.damestyle
 {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 100%;
     margin: 0%;
+    margin-top: 1%;
     padding: 0px;
+    
     
 }
 
@@ -675,26 +705,22 @@ ul.liste-footer
 #hebergements
 {
     margin: 0;
-    width: fit-content;
-}
-.hotel
-{
-    padding: 0%;
-    background-color: none;
-    width: fit-content;
-    flex-wrap: wrap;
-}
-
-.directionrow
-{
-    
-    flex-wrap: wrap;
     
 }
-
+#HEBERGEMENTS .hotel
+{
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+}
 .populaire
 {
-    width: fit-content;
+    width: 100%;
+}
+.directioncolumn
+{
+    flex-wrap: wrap;
+
 }
 .logementpop
 {
@@ -707,23 +733,19 @@ ul.liste-footer
 img.bottomlefttopleft
 {
     
-    width: fit-content;
+    width: 50%;
     object-fit: cover;
 }
 .logement
 {
-    margin: 15px;
-    margin-top: 35px;
-    margin-top: 50px;
-    width: 230px;
+   margin-left: 50px;
+   margin: 10PX;
+   margin-top: 50PX;
+   width: 27%;
+
 }
 
-#hebergements .hotel 
-{
-    margin-bottom: 20px;
-    margin-right: 30px;
-   
-}
+
 .activite-list
 {
     flex-wrap: wrap;
@@ -731,17 +753,42 @@ img.bottomlefttopleft
     
 }
 
-
-img.radiustopleftright
+.deuxcolumn
 {
-    width: 220px;
+    
+    display: flex;
+    flex-flow: row wrap;
+
 }
+.columnact
+{
+    width: 40%;
+}
+.columnactdouble
+{
+    width: 40%;
+}
+
 .hotelname
 {
-    font-size: 17px;
+    font-size: 13px;
 }
 
 
+}
+
+
+@media screen and (max-width: 814px)
+
+{
+    .hotel
+    {
+        margin: 0;
+    }
+    .directionrow .logement
+    {
+        width: 50%;
+    }
 }
 
 /***** Mobile responsive ****/
@@ -750,10 +797,7 @@ img.radiustopleftright
 {
 
    
-#hebergements .hotel .populaire
-{
-    width: 100%;
-}
+
 header {
         
         flex-direction: column;
@@ -770,27 +814,13 @@ nav a:hover
         flex-direction: column;
         
     }
-img.bottomlefttopleft {
-    width: 250px;
-}
+
 .filters ul
 {
    
     flex-direction: column;
 }
 
-.directionrow
-{
-    
-    flex-wrap: wrap;
-    
-}
-.directioncolumn
-{
-    
-    flex-wrap: wrap;
-    
-}
 
 #activites
 {
@@ -798,28 +828,24 @@ img.bottomlefttopleft {
 
 }
 
-.columnactdouble img, .columnact img
+
+
+.directioncolumn .logement
 {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 150px;
-    width: 275px;
-    object-fit: cover;
-    
+    width: 70%;
 }
-.logement
-{
-    width: 190px;
-}
+
 img.radiustopleftright
 {
-    width: 180px;
+    width: 95%;
+    
 }
-.hotel
+#hebergements .populaire
 {
-    width: fit-content;
-    padding: 0%;
-
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    margin-top: 15px;
 }
 p.price, p.hotelname , .etoile
 {
@@ -833,10 +859,117 @@ img.bottomlefttopleft
 {
     flex-direction: column;
 }
+
+
+}    
+@media screen and (max-width: 637px)
+{
+
+*
+{
+    margin: 0;
+}
+
 .hotel
+{
+    margin: 0;
+
+}
+#hebergements .directionrow
+    {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        background-color: aqua;
+    }
+
+#hebergements .directioncolumn
+{
+    background-color: blue;
+}
+
+#hebergements .logement
+{
+    width: 100%;
+    
+    margin-left: 20px;
+}
+img.radiustopleftright
+{
+    width: 98%;
+    object-fit:cover;
+}
+#heberhements .directionrow
+{
+    background-color: aqua;
+}
+p.price
+{
+    font-size: 20px;
+}
+p.hotelname
+{
+    font-size: 20px;
+}
+
+p.hotelnamepop 
+{
+    font-size: 15px;
+}
+.logementpop p.pricepop
+{
+    font-size: 15px;
+}
+.deuxcolumn
 {
     flex-direction: column;
 }
+.columnact
+{
+    width: 90%;
+    MARGIN-right: 50px;
+}
+.columnactdouble
+{
+    width: 100%;
+}
+}
+@media screen and (max-width: 1096px)
+{
+ 
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
 
-}    
+    .hotel
+    {
+        width: 90%;
+    }
 
+    .populaire
+    {
+        width: 93%;
+    }
+    
+    .hotelnamepop
+    {
+        font-size: 25px;
+    }
+    p.pricepop
+    {
+        font-size: 22px;
+    }
+    .directionrow
+    {
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width: 1243px)
+{
+    .logement{
+        width: 90%;
+    }
+}
