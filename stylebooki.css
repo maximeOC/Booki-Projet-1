@@ -117,13 +117,13 @@ header img
    height: 75px;
    margin-left: 0px;
 }
-h1 strong
+h1.slogan strong
 {
-    font-size: 25px;
+    font-size: 23px;
     margin-left: 10px;
     margin-bottom: 10px;
 
-    font-weight: bolder;
+    font-weight: bold;
 }
 p.endroit
 {
@@ -294,7 +294,6 @@ img.radiustopleftright
   padding: 0 20px;
   position: absolute;
   font-size: 22px;
-  
   margin: 5px;
   margin-top: 17px;
   
@@ -341,7 +340,7 @@ img.radiustopleftright
   justify-items: start;
   box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   border-radius: 20px;
-  height: 240px;
+  height: 260px;
   margin-top: 60px;
   margin-left: 10px;
   margin-right: 0px;
@@ -358,7 +357,7 @@ img.radiustopleftright
 }
 .hotelname
 {
-    
+    font-size: 18px;
     margin-left: 10px;
     margin-bottom: 3px;
     margin-top: 5px;
@@ -369,6 +368,7 @@ color:#0065FC;
 margin-left: 10px;
 margin-top: 0px;
 margin-bottom: 5px;
+padding-top: 15px;
 
 }
 .etoile i.grey , .etoilepop i.grey
@@ -392,7 +392,7 @@ margin-bottom: 5px;
   box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
   border-radius: 40px;
   padding-right: 0px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 10px;
   width: 100%;
   height: 150px;
@@ -434,12 +434,15 @@ margin-bottom: 5px;
 {
     font-size: 22px;
     margin-left: 10px;
+    margin-top: 0px;
+    
+    
     
 }
 i.chartline
 {
     
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 10px;
     font-size: 20px;
 }
@@ -447,9 +450,6 @@ i.chartline
 {
     display: flex;
     justify-content: space-between;
-    
-
-
 }
 img.bottomlefttopleft
 {
@@ -604,7 +604,7 @@ p.pricepop
 }
 .columnactdouble .fort .taillefort
 {
-    width: auto;
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
@@ -617,7 +617,7 @@ p.pricepop
 }
 .columnactdouble .longchamp img
 {
-    width: auto;
+    width: 100%;
     height: 155px;
 }
 
@@ -640,23 +640,22 @@ h3.damestyle
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0%;
+    margin: 0px;
     margin-top: 1%;
-    padding: 0px;
-    
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
     
 }
 
 /***** Footer *****/
-
 
 .footercontenu
 {
     display: flex;
     flex-direction: row;
     background-color:#f2f2f2;
-    padding: 40px;  
-    
+    padding: 60px;  
 }
 
 .footer-services
@@ -665,9 +664,6 @@ h3.damestyle
     flex-direction: column;
     height: 170px;
     width: 100%;
-    
-    
-    
 }
 ul.liste-footer
 {
@@ -690,8 +686,46 @@ ul.liste-footer
     margin-bottom: 5px;
    
 }
- 
+@media screen and (max-width: 1243px)
+{
+    .logement{
+        width: 90%;
+    }
+}
 
+@media screen and (max-width: 1096px)
+{
+ 
+    #hebergements
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotel
+    {
+        width: 90%;
+    }
+
+    .populaire
+    {
+        width: 93%;
+    }
+    
+    .hotelnamepop
+    {
+        font-size: 25px;
+    }
+    p.pricepop
+    {
+        font-size: 22px;
+    }
+    .directionrow
+    {
+        width: 100%;
+        
+    }
+}
 /*** tablette responsive *****/
 
 @media screen and (max-width: 992px)
@@ -795,7 +829,9 @@ img.bottomlefttopleft
 
 @media screen and (max-width: 768px)
 {
-
+*{
+    margin: 0px;
+}
    
 
 header {
@@ -808,6 +844,11 @@ nav a:hover
         
     }
 
+h1.slogan 
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .filters 
     {
         
@@ -832,7 +873,7 @@ nav a:hover
 
 .directioncolumn .logement
 {
-    width: 70%;
+    width: 75%;
 }
 
 img.radiustopleftright
@@ -842,7 +883,7 @@ img.radiustopleftright
 }
 #hebergements .populaire
 {
-    width: 100%;
+    width: 95%;
     margin: 0;
     padding: 10px;
     margin-top: 15px;
@@ -867,7 +908,7 @@ img.bottomlefttopleft
 
 *
 {
-    margin: 0;
+    margin: 0%;
 }
 
 .hotel
@@ -880,28 +921,20 @@ img.bottomlefttopleft
         flex-direction: column;
         width: 100%;
         margin: 0;
-        background-color: aqua;
+        
     }
 
-#hebergements .directioncolumn
-{
-    background-color: blue;
-}
+
 
 #hebergements .logement
 {
     width: 100%;
-    
     margin-left: 20px;
 }
 img.radiustopleftright
 {
     width: 98%;
     object-fit:cover;
-}
-#heberhements .directionrow
-{
-    background-color: aqua;
 }
 p.price
 {
@@ -924,52 +957,22 @@ p.hotelnamepop
 {
     flex-direction: column;
 }
-.columnact
+.deuxcolumn .columnact
 {
     width: 90%;
-    MARGIN-right: 50px;
+    margin: 0 19px;
+    height: 150px;
 }
-.columnactdouble
+.deuxcolumn .columnactdouble 
 {
     width: 100%;
-}
-}
-@media screen and (max-width: 1096px)
-{
- 
-    #hebergements
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hotel
-    {
-        width: 90%;
-    }
-
-    .populaire
-    {
-        width: 93%;
-    }
     
-    .hotelnamepop
-    {
-        font-size: 25px;
-    }
-    p.pricepop
-    {
-        font-size: 22px;
-    }
-    .directionrow
-    {
-        width: 100%;
-        
-    }
+    margin: 0px;
+    
 }
-@media screen and (max-width: 1243px)
+.columnact img.vieuxport , img.calanque
 {
-    .logement{
-        width: 90%;
-    }
+    height: 80%;
+}
+
 }
