@@ -265,7 +265,7 @@ i.icon-filter
 .info
 {
     display: inline-block;
-    width: 50%;
+    width: 80%;
     margin-left: 15px;
     margin-top: 25px;
     
@@ -533,6 +533,7 @@ p.pricepop
   text-align: center;
   width: 100%;
   
+  
 }
 .activite-list :hover
 {
@@ -592,8 +593,8 @@ p.pricepop
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 385px;
-    margin-right: 0px;
+    height: 90%;
+    
     object-fit: cover;
 }
 .columnactdouble .iles .tailleiles
@@ -749,7 +750,7 @@ ul.liste-footer
 }
 .populaire
 {
-    width: 100%;
+    width: 93%;
 }
 .directioncolumn
 {
@@ -823,6 +824,10 @@ img.bottomlefttopleft
     {
         width: 50%;
     }
+    .info
+    {
+        margin-bottom: 15px;
+    }
 }
 
 /***** Mobile responsive ****/
@@ -869,7 +874,10 @@ h1.slogan
 
 }
 
-
+h3.name , .damestyle
+{
+    padding: 10px;
+}
 
 .directioncolumn .logement
 {
@@ -908,7 +916,7 @@ img.bottomlefttopleft
 
 *
 {
-    margin: 0%;
+    margin: 0;
 }
 
 .hotel
@@ -924,7 +932,10 @@ img.bottomlefttopleft
         
     }
 
-
+h3.name , .damestyle
+{
+    padding: 10px;
+}
 
 #hebergements .logement
 {
@@ -934,7 +945,7 @@ img.bottomlefttopleft
 img.radiustopleftright
 {
     width: 98%;
-    object-fit:cover;
+    object-fit: cover;
 }
 p.price
 {
@@ -953,16 +964,14 @@ p.hotelnamepop
 {
     font-size: 15px;
 }
-.deuxcolumn
-{
-    flex-direction: column;
-}
-.deuxcolumn .columnact
+
+.columnact 
 {
     width: 90%;
     margin: 0 19px;
-    height: 150px;
+    height: 70%;
 }
+
 .deuxcolumn .columnactdouble 
 {
     width: 100%;
@@ -970,9 +979,9 @@ p.hotelnamepop
     margin: 0px;
     
 }
-.columnact img.vieuxport , img.calanque
+.columnact img 
 {
-    height: 80%;
+    width: 100%;
+    height: 90%;
 }
-
 }
