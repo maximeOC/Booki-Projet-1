@@ -1,7 +1,9 @@
 
+   
+
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+h1, h2, h4, h5, h6, p, blockquote, pre,
+ abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -21,8 +23,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+
+body
+{
+    margin: 0;
 }
 ol, ul {
 	list-style: none;
@@ -72,50 +76,42 @@ header{
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 25px;
-    align-items: center;
     
+    align-items: center;
 }
 nav ol
 {
-    display: flex;
-    flex-direction: row;
-    margin-right: 20px;
-    
+display: flex;
 }
+
 nav a.surlignement:hover
 {
 	color: #0065FC;
-	border-top: 2px solid #0065FC;
-	padding-top: 33px;
+	border-top: 3px solid #0065FC;
+	padding-top: 25px;
+    
     
 }
-
 a{
     text-decoration: black;
     color: black;
-    background-color: transparent;
+    
+
 }
 nav li
 {
     list-style: none;
-    justify-content: space-between;
     margin-right: 80px;
     padding-top: 0px;
-    
 }
-a
-{
-    text-decoration: none;
-    background-color: transparent;
-}
+
 
 
 header img
 {
    width: 150px;
    height: 75px;
-   margin-left: 0px;
+   margin-left: 20px;
 }
 h1.slogan strong
 {
@@ -131,6 +127,7 @@ p.endroit
     text-decoration: #f2f2f2;
     font-size: 20px;
     margin-left: 10px;
+    font-weight: lighter;
 }
 
 .searchbar
@@ -160,6 +157,9 @@ button.recherche
     border: none;
     overflow: visible;
 }
+.recherche i{
+    display: none;
+}
 .search
 {
     display: flex;
@@ -185,9 +185,10 @@ p
     display: flex;
     flex-direction: row;
     align-items: center;
-    width:fit-content;
+    width:80%;
     margin-left: 6PX;
     margin-top: 30px;
+   
    
     
 }
@@ -196,14 +197,13 @@ h2.filtretitre  {
     margin-left: 10px;
     
   }
-  
-.filters ul {
+.filters ul
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: fit-content;
-
 }
+ 
   
 .filters ul li 
 {
@@ -214,7 +214,6 @@ h2.filtretitre  {
     margin-right: 10px;
     font-weight: 700;
     height: fit-content;
-    height: 50PX;
     border: solid 2px #e2e2e2;
     margin-top: 0px;
     border-radius: 200px;
@@ -224,16 +223,19 @@ h2.filtretitre  {
     
     
 }
+.filters ul li span{
+    margin-left: 10px;
+}
 i.icon-filter
 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;  
     border: solid 2px #e2e2e2;
     border-radius: 50%;
     background-color: #DEEBFF;
-    height: 50px;
-    width: 45px;
+    height: 55px;
+    width: 50px;
     color: #0065FC;
     
 }
@@ -252,7 +254,7 @@ i.icon-filter
 
 .info i
 {
-    border: 1px black solid;
+    border: 1px rgb(194, 193, 193) solid;
     border-radius: 50%;
     align-items: center;
     width: 13px;
@@ -273,7 +275,7 @@ i.icon-filter
 
 img.radiustopleftright
 {
-    width: auto;
+    width: 97%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 150px;
@@ -350,7 +352,7 @@ img.radiustopleftright
 }
 .price
 {
-    
+    font-weight: lighter;
     margin-top: 0px;
     margin-left: 10px;
     font-size: 15px;
@@ -390,7 +392,7 @@ padding-top: 15px;
 {
   display: flex;
   box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
-  border-radius: 40px;
+  border-radius: 15px;
   padding-right: 0px;
   margin-top: 40px;
   margin-left: 10px;
@@ -455,8 +457,8 @@ img.bottomlefttopleft
 {
     object-fit: cover;
     width: 50%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 5px;
@@ -491,10 +493,16 @@ p.pricepop
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 15px;
+    font-weight: lighter;
     
 }
 
-
+#activites 
+{
+    margin-left: 0px;
+    padding-right: 10px;
+    
+}
 #activites h2
 {
     margin-left: 50px ;
@@ -515,25 +523,31 @@ p.pricepop
 
  
 }
+
 .deuxcolumn
 {
-    
     display: flex;
-    width: 100%;
-    
 }
+
 .columnact 
 {
-  display: flex;
-  box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 0px;
-  margin: 40px;
-  margin-left: 30px;
-  text-align: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    margin-top: 50PX;
   
   
+}
+
+.columnact .name 
+{
+    margin-top: 5px;
+    
 }
 .activite-list :hover
 {
@@ -588,15 +602,24 @@ p.pricepop
     width: 90%;
 
 }
-.columnact img
+.columnact img.calanque
 {
-    width: 100%;
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 90%;
-    
-    object-fit: cover;
+    width: 100%;
+    height: 400PX; 
+    object-fit: cover;  
 }
+.columnact img.vieuxport
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 400PX;
+    object-fit: cover;  
+}
+
 .columnactdouble .iles .tailleiles
 {
     height: 100px;
@@ -713,9 +736,10 @@ ul.liste-footer
         width: 93%;
     }
     
-    .hotelnamepop
+    p.hotelnamepop
     {
-        font-size: 25px;
+        font-size: 17px;
+        font-weight: 700;
     }
     p.pricepop
     {
@@ -776,7 +800,7 @@ img.bottomlefttopleft
    margin-left: 50px;
    margin: 10PX;
    margin-top: 50PX;
-   width: 27%;
+   width: 35%;
 
 }
 
@@ -834,49 +858,89 @@ img.bottomlefttopleft
 
 @media screen and (max-width: 768px)
 {
-*{
-    margin: 0px;
+
+
+header img 
+{
+        width: 100PX;
+        height: 50PX;
+        padding: 20PX;
 }
-   
+.filtretitre
+{
+    
+    width: 95%;
+}
 
 header {
-        
         flex-direction: column;
+        margin: 0;               
     }
-nav a:hover   
+nav 
+{
+    border-bottom: 2px solid rgb(241, 239, 239);
+    width: 100%;
+}
+nav ol 
+{
+    justify-content: space-around;     
+}
+
+nav li a.surlignement
+{
+    font-size: 1.2em;
+    width: 100%;
+}
+nav a.surlignement:hover
     {
-        display:none;
-        
+        border-top: none;
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC ; 
+        width: 150px;
+        padding-bottom: 15px;     
+                        
     }
 
+.search button.recherche span 
+{
+    display: none;
+}
+.search button.recherche i
+{
+    display: block;
+    padding: 5px;
+}
 h1.slogan 
 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 .filters 
-    {
-        
-        flex-direction: column;
+    {      
+        flex-direction: column;        
+        width: fit-content;
         
     }
 
 .filters ul
 {
    
-    flex-direction: column;
+    flex-wrap: wrap;
+    
+    padding-left: 0;
 }
 
 
 #activites
 {
-    margin: 15px;
+    margin: 10px;
 
 }
 
 h3.name , .damestyle
 {
     padding: 10px;
+    
 }
 
 .directioncolumn .logement
@@ -893,13 +957,33 @@ img.radiustopleftright
 {
     width: 95%;
     margin: 0;
-    padding: 10px;
+    padding-right: 15px;
     margin-top: 15px;
 }
-p.price, p.hotelname , .etoile
+
+P.hotelnamepop
 {
-    font-size: 13px;
+    font-size: 20px;
+    font-weight: 700;
+    
 }
+.logement p.price   
+{
+    font-size: 15px;
+}
+
+.logement p.hotelname
+{
+    font-size: 15px;
+}
+.logement .etoile
+{
+    font-size: 15px;
+    
+    padding-top: 5px;
+}
+
+
 img.bottomlefttopleft
 {
     object-fit: cover;
@@ -914,33 +998,48 @@ img.bottomlefttopleft
 @media screen and (max-width: 637px)
 {
 
-*
+.slogan 
 {
-    margin: 0;
+    margin-left: 2% ;
+    margin-right: 5%;
+    
+    
 }
 
+#hebergements .hotel
+{
+    order: 2;
+}
+
+#hebergements .populaire
+{
+    order: 1;
+}
 .hotel
 {
-    margin: 0;
-
+    width: 90%;
+    background-color: white;
 }
-#hebergements .directionrow
+h1.slogan
+{
+    display: flex;
+}
+p.endroit , .search
+{
+    margin-left: 4%;
+}
+
+.directionrow
     {
+        display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0;
-        
     }
-
-h3.name , .damestyle
-{
-    padding: 10px;
-}
-
 #hebergements .logement
 {
     width: 100%;
     margin-left: 20px;
+    
 }
 img.radiustopleftright
 {
@@ -965,23 +1064,44 @@ p.hotelnamepop
     font-size: 15px;
 }
 
-.columnact 
+.columnact .name
 {
-    width: 90%;
-    margin: 0 19px;
-    height: 70%;
+    
+    width: 100%;
+    padding-left: 0%;
+    display: flex;
+    font-size: 15PX;
+    padding-left: 10px;
+}
+h3.name , .damestyle
+{
+    font-size: medium;
+    width: 100%;
+    display: flex;
 }
 
-.deuxcolumn .columnactdouble 
+.columnact 
+{
+    width: 90%;    
+}
+
+.columnactdouble 
 {
     width: 100%;
-    
-    margin: 0px;
-    
 }
 .columnact img 
 {
-    width: 100%;
-    height: 90%;
+    width: 90%;
+    height: 200PX;
 }
+}
+
+@media screen and (max-width: 415px)
+{
+    header img
+    {
+        width: 75PX;
+        height: 40PX;
+        padding: 20PX;
+    }
 }
