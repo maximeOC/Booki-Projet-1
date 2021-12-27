@@ -147,6 +147,8 @@ p.endroit
     border: none;
     -webkit-appearance: textfield; 
     outline-offset: -2px;
+    font-weight: bold ;
+    padding-left: 5px;
 }
 button.recherche
 {
@@ -166,11 +168,11 @@ button.recherche
     margin-left: 10px;
     margin-top: 10px;
     border: solid 2px #e2e2e2;
-    height: 20px;
+    height: 40px;
     border-radius: 10px;
     background-color: #f2f2f2;
     width:fit-content;
-    height: 40PX;
+   
     
 }
 p
@@ -869,7 +871,7 @@ header img
 .filtretitre
 {
     
-    width: 95%;
+    width: 90%;
 }
 
 header {
@@ -884,21 +886,21 @@ nav
 nav ol 
 {
     justify-content: space-around;     
+    width: 88%;
 }
 
-nav li a.surlignement
+nav li 
 {
     font-size: 1.2em;
-    width: 100%;
+    padding-left: 15PX;
 }
+
 nav a.surlignement:hover
     {
         border-top: none;
         color: #0065FC;
         border-bottom: 2px solid #0065FC ; 
-        width: 150px;
-        padding-bottom: 15px;     
-                        
+        padding-bottom: 15px;                    
     }
 
 .search button.recherche span 
@@ -955,10 +957,10 @@ img.radiustopleftright
 }
 #hebergements .populaire
 {
-    width: 95%;
-    margin: 0;
+    width: 90%;
     padding-right: 15px;
     margin-top: 15px;
+    
 }
 
 P.hotelnamepop
@@ -1002,8 +1004,6 @@ img.bottomlefttopleft
 {
     margin-left: 2% ;
     margin-right: 5%;
-    
-    
 }
 
 #hebergements .hotel
@@ -1017,7 +1017,7 @@ img.bottomlefttopleft
 }
 .hotel
 {
-    width: 90%;
+    width: 85%;
     background-color: white;
 }
 h1.slogan
@@ -1038,8 +1038,7 @@ p.endroit , .search
 #hebergements .logement
 {
     width: 100%;
-    margin-left: 20px;
-    
+    margin-left: 25px;
 }
 img.radiustopleftright
 {
@@ -1082,12 +1081,14 @@ h3.name , .damestyle
 
 .columnact 
 {
-    width: 90%;    
+    width: 90%;   
+     
 }
 
 .columnactdouble 
 {
     width: 100%;
+    margin: 0;
 }
 .columnact img 
 {
@@ -1103,5 +1104,15 @@ h3.name , .damestyle
         width: 75PX;
         height: 40PX;
         padding: 20PX;
+    }
+
+    button.recherche 
+    {
+        border-radius: 10PX;
+        padding: 10PX;
+    }
+    #hebergements
+    {
+        width: 97%;
     }
 }
