@@ -76,36 +76,40 @@ header{
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
-    
     align-items: center;
 }
-nav ol
+nav 
 {
-display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+    width: 25%;
+    
+}
+nav .heb , .act
+{
+    width: 50%;
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
 }
 
-nav a.surlignement:hover
+.heb:hover , .act:hover 
 {
 	color: #0065FC;
 	border-top: 3px solid #0065FC;
-	padding-top: 25px;
-    
-    
+}
+nav a:hover
+{
+    color: #0065FC;
 }
 a{
     text-decoration: black;
     color: black;
-    
-
 }
-nav li
-{
-    list-style: none;
-    margin-right: 80px;
-    padding-top: 0px;
-}
-
-
 
 header img
 {
@@ -129,18 +133,15 @@ p.endroit
     margin-left: 10px;
     font-weight: lighter;
 }
-
 .searchbar
 {
     display: flex;
 }
 .position
 {
-
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 8px;
-
 }
 .searchInput
 {
@@ -172,8 +173,6 @@ button.recherche
     border-radius: 10px;
     background-color: #f2f2f2;
     width:fit-content;
-   
-    
 }
 p
 {
@@ -860,13 +859,11 @@ img.bottomlefttopleft
 
 @media screen and (max-width: 768px)
 {
-
-
 header img 
 {
-        width: 100PX;
-        height: 50PX;
-        padding: 20PX;
+        width: 110PX;
+        height: 55PX;
+        padding-right: 40PX;
 }
 .filtretitre
 {
@@ -882,27 +879,20 @@ nav
 {
     border-bottom: 2px solid rgb(241, 239, 239);
     width: 100%;
+    padding-bottom: 0px;
+    justify-content: space-around;
+    
 }
-nav ol 
+nav .heb .act
 {
-    justify-content: space-around;     
-    width: 88%;
+    display: flex; 
 }
-
-nav li 
-{
-    font-size: 1.2em;
-    padding-left: 15PX;
-}
-
-nav a.surlignement:hover
+.heb:hover , .act:hover
     {
         border-top: none;
         color: #0065FC;
-        border-bottom: 2px solid #0065FC ; 
-        padding-bottom: 15px;                    
+        border-bottom: 2px solid #0065FC ;                    
     }
-
 .search button.recherche span 
 {
     display: none;
@@ -1019,6 +1009,7 @@ img.bottomlefttopleft
 {
     width: 85%;
     background-color: white;
+    margin: 10px;
 }
 h1.slogan
 {
@@ -1039,6 +1030,7 @@ p.endroit , .search
 {
     width: 100%;
     margin-left: 25px;
+
 }
 img.radiustopleftright
 {
@@ -1101,9 +1093,10 @@ h3.name , .damestyle
 {
     header img
     {
-        width: 75PX;
-        height: 40PX;
-        padding: 20PX;
+        width: 85PX;
+        height: 50PX;
+        padding-right: 70PX;
+        padding-top: 10px;
     }
 
     button.recherche 
