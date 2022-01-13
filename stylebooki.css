@@ -148,7 +148,8 @@ p.endroit
     border: none;
     -webkit-appearance: textfield; 
     outline-offset: -2px;
-    font-weight: bold ;
+    font-weight: 900;
+    color: black;
     padding-left: 5px;
 }
 button.recherche
@@ -429,8 +430,6 @@ padding-top: 15px;
     border-radius: 10px;
     padding-top: 0PX;
     height: fit-content;
-    
-    
 }
 
 .pluspop
@@ -438,9 +437,6 @@ padding-top: 15px;
     font-size: 22px;
     margin-left: 10px;
     margin-top: 0px;
-    
-    
-    
 }
 i.chartline
 {
@@ -484,7 +480,7 @@ img.bottomlefttopleft
 }
 .hotelnamepop
 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 800;
     margin-left: 0%;
     
@@ -626,12 +622,16 @@ p.pricepop
     height: 100px;
     object-fit: cover;
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .columnactdouble .fort .taillefort
 {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .columnactdouble .damedelagarde img
@@ -639,26 +639,22 @@ p.pricepop
     
     object-fit: cover;
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .columnactdouble .longchamp img
 {
     width: 100%;
     height: 155px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
 }
 
 
 h3.damestyle
 {
     font-size: 15px;
-}
-.columnactdouble img
-{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-    
 }
 .columnactdouble
 {
@@ -745,6 +741,11 @@ ul.liste-footer
     p.pricepop
     {
         font-size: 22px;
+    }
+
+    .logementpop 
+    {
+        margin-bottom: 20px;
     }
     .directionrow
     {
@@ -843,11 +844,18 @@ img.bottomlefttopleft
 {
     .hotel
     {
-        margin: 0;
-    }
+        margin: 10px
+        }
     .directionrow .logement
     {
         width: 50%;
+    }
+
+    p.hotelname
+
+    {
+        font-weight: 900;
+        font-size: 15px;
     }
     .info
     {
@@ -911,7 +919,6 @@ h1.slogan
     {      
         flex-direction: column;        
         width: fit-content;
-        
     }
 
 .filters ul
@@ -1074,21 +1081,68 @@ h3.name , .damestyle
 .columnact 
 {
     width: 90%;   
-     
+     height: 250px;
 }
 
+.columnactdouble .fort 
+{
+       
+     height: 250px;
+     object-fit: cover;
+}
+
+.columnactdouble .fort .taillefort
+{
+    height: 175px;
+}
+.columnactdouble .longchamp
+{
+    height: 250px;
+}
+.columnactdouble .longchamp img 
+{
+    height: 175px;
+}
+
+.damedelagarde
+{
+    height: 250px;
+}
+
+.damedelagarde img 
+{
+    height: 175px;
+}
 .columnactdouble 
 {
     width: 100%;
     margin: 0;
 }
-.columnact img 
+.columnact img.vieuxport
 {
-    width: 90%;
-    height: 200PX;
+    width: 100%;
+    height: 175PX;
 }
-}
+.columnact img.calanque
+{
+    width: 100%;
+    height: 175PX;
 
+}
+.columnactdouble .iles 
+{
+    height: 250PX;
+    
+}
+.columnactdouble .iles .tailleiles
+{
+    height: 175px;
+}
+.columnact h3.name
+{
+    margin-top: 15px;
+}
+}
 @media screen and (max-width: 415px)
 {
     header img
@@ -1102,10 +1156,29 @@ h3.name , .damestyle
     button.recherche 
     {
         border-radius: 10PX;
-        padding: 10PX;
+        display: flex;
+        align-items: center;
+        padding-right: 2%;
+        padding-left: 2%;
+        
+    }
+    .search
+    {
+        margin-left: 30px;
+        
     }
     #hebergements
     {
         width: 97%;
+    }
+
+    .populaire
+    {
+        margin: 15px;
+    }
+    .deuxcolumn
+    {
+        
+        padding-bottom: 15px;
     }
 }
